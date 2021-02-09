@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #2e384d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #2e384d;
+}
+
+
+.plus{
+    height: 50px;
+       width: 650px;
+    border: 2.5px solid green;
+    }
+
+.plus h4{
+    color: green;}
+   
+    .minus{
+        height: 50px;
+        width: 650px;
+        border: 2.5px solid red;
+        }
+    
+    .minus h4{
+        color:red;}
+       
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(228, 225, 225, 0.671);
+    width: 75em;
+    padding: 5rem;
+    font-weight: bold; 
+    box-shadow:0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.35);
+    border-width: 5px;
+    border-color: darkgrey;
+}
+    .expense-title{
+        font-size: 5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        color:black;
+    }
+
+    .balance{
+        width: 65rem;
+        height: 20rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow:0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.35);
+    }
+
+ h1{
+        font-size: 7rem;
+        font-weight: bold;
+        color: black;
+    }
+
+  h4{
+        color: black;
+    }
+
+.balance h4{
+    color: black;
+    font-size: 2rem;
+}
+
+    /*
+.history h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.history h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.transaction-title h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+*/
+.inc-exp-container {
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: space-between;
+                   margin-top: 5rem;
+                   margin-bottom: 5rem;
+}
+
+.income{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 13rem;
+    background-color: white;
+    padding: 0rem 3rem 0rem 3rem;
+    border: 0.3rem solid green;
+}
+
+ h2{
+    font-size: 3.5rem;
+ }
+
+.income h2{
+    color: green;
+}
+.expense h2{
+    color: red;
+}
+.expense{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 13rem;
+    background-color: white;
+    padding: 0rem 3rem 0rem 3rem;
+    border: 0.3rem solid red;
+}
+
+.expense, .income h4{
+    font-size: 1.8rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.title-history{
+    font-size: 3.5rem;
+    color: black;
+    padding-bottom: 2.5rem;
+}
+.history-box{
+    height: 35rem;
+    overflow: hidden;}
+   /* &:hover{
+        overflow-y: scroll;
+        padding-right: 1.5rem;
+    }
+    border: 30px 30px; */
+    
+.history-box li{
+    list-style: none;
+    background-color: white;
+    display: flex;
+    padding-top: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.history-box h4{
+    font-size: 2rem;
+    font-weight: bold;
+    }
+
+  .plus span{
+        font-size: 2rem;
+        
+         }
+   .fa-trash-alt{
+             color: black;
+         }    
+         .fa-caret-up
+         {
+             color: green;
+         }  
+
+         .minus span{
+            font-size: 2rem;
+            
+             }
+             .fa-trash-alt{
+                 color:black;
+             }    
+             .fa-caret-down
+             {
+                 color: red;
+             }  
+
+             .transaction-title{
+                 font-size: 3.5rem;
+                 color: black;
+                 margin-bottom: 1rem;
+
+             }
+    
+             .transaction-form{
+                 display: flex;
+                 flex-direction: column;
+                 }
+
+                 .transaction-form input{
+                     padding: 1.5rem;
+                     margin-bottom: 1.8rem;
+                     color: black;
+                     font-size: 1.8rem;
+                     font-weight: medium;
+                 }
+
+                 input::placeholder{
+                     color: black;
+                     font-size: 1.8rem;
+                 }
+
+                 h5{
+                     font-size: 2rem;
+                 }
+
+                 #tagselect{
+                    padding: 1.5rem;
+                    margin-bottom: 2rem;
+                    color: black;
+                    font-size: 1.8rem;
+                    font-weight: medium;
+                 }
+
+                 #typeselect{
+                    padding: 1.5rem;
+                    margin-bottom: 2rem;
+                    color: black;
+                    font-size: 1.8rem;
+                    font-weight: medium;
+                 }
+
+                 button{
+                     background-color: royalblue;
+                     padding: 2rem 5rem;
+                     font-size: 2rem;
+                     color:white;
+                     border: 3px solid blue;
+                     text-transform: uppercase;
+                     text-align: center;
+                     font-weight: bold;
+                     border-radius: 5px;
+                 }
+ button:hover{
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+}
